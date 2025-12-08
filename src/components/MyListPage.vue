@@ -8,10 +8,14 @@
 
     <ul v-else class="list">
       <li v-for="anime in myList" :key="anime.id">
-        <div>
-          <strong>{{ anime.title }}</strong>
-          <span class="rating">{{ anime.rating }} / 10</span>
+        <div class="left">
+          <img :src="anime.imageUrl" class="cover" />
+          <div>
+            <div class="title">{{ anime.title }}</div>
+            <div class="note">Note : {{ anime.note }} / 10</div>
+          </div>
         </div>
+
         <div class="actions">
           <button @click="goToDetail(anime.id)">Voir</button>
           <button class="remove" @click="removeFromList(anime.id)">Retirer</button>
@@ -35,7 +39,7 @@ function goToDetail(id: number) {
 
 <style scoped>
 .page {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -46,28 +50,47 @@ h1 {
 
 .empty {
   text-align: center;
-  color: #aaa;
+  color: #9ca3af;
 }
 
 .list {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.list li {
-  background: #262626;
-  border-radius: 8px;
+li {
+  background: #020617;
+  border-radius: 12px;
   padding: 10px 12px;
-  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid rgba(244, 114, 182, 0.4);
 }
 
-.rating {
-  margin-left: 8px;
-  color: #e67e22;
-  font-size: 0.9rem;
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cover {
+  width: 40px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: 0.95rem;
+}
+
+.note {
+  font-size: 0.85rem;
+  color: #fb7185;
 }
 
 .actions {
@@ -76,20 +99,20 @@ h1 {
 }
 
 button {
-  padding: 5px 10px;
-  border-radius: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
   border: none;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 button:not(.remove) {
-  background: #2563eb;
-  color: white;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  color: #fff;
 }
 
 button.remove {
   background: #ef4444;
-  color: white;
+  color: #fff;
 }
 </style>

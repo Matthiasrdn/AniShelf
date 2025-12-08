@@ -1,7 +1,6 @@
 <template>
   <div class="detail-page" v-if="anime">
     <h1>{{ anime.title }}</h1>
-    <p class="rating">{{ anime.rating }} / 10</p>
     <p class="description">{{ anime.description }}</p>
 
     <button @click="$router.back()">Retour</button>
