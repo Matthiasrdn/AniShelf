@@ -53,445 +53,653 @@ interface Question {
 const QUESTIONS_PER_GAME = 10
 
 const fullQuestions: Question[] = [
-  // NARUTO
   {
-    question: "Dans Naruto, qui est le Quatrième Hokage ?",
-    choices: ["Hiruzen Sarutobi", "Minato Namikaze", "Tobirama Senju", "Hashirama Senju"],
-    answer: "Minato Namikaze"
+    question: "Dans Vinland Saga, quel est le cadre historique principal de l’histoire ?",
+    choices: ["La Grèce antique", "Le Japon féodal", "L’Europe des Vikings", "L’Amérique coloniale"],
+    answer: "L’Europe des Vikings"
   },
   {
-    question: "Quel démon à queues est scellé dans Naruto au début de la série ?",
-    choices: ["Shukaku", "Kurama", "Gyūki", "Matatabi"],
-    answer: "Kurama"
+    question: "Quel est le sport au cœur de Blue Lock ?",
+    choices: ["Basket-ball", "Football", "Rugby", "Handball"],
+    answer: "Football"
   },
   {
-    question: "Quel est le nom de la technique emblématique de Naruto transmise par Jiraya ?",
-    choices: ["Chidori", "Rasengan", "Raikiri", "Rasenshuriken"],
-    answer: "Rasengan"
+    question: "Dans Tokyo Ghoul, quel établissement sert de refuge aux ghouls bienveillantes ?",
+    choices: ["Anteiku", "Kabaneri", "NERV", "Soul Society"],
+    answer: "Anteiku"
   },
   {
-    question: "Lors de l'examen Chûnin, contre qui Naruto se bat-il en 1v1 dans l'arène ?",
-    choices: ["Gaara", "Neji", "Kiba", "Rock Lee"],
-    answer: "Neji"
+    question: "Dans Steins;Gate, quel élément du quotidien est détourné pour envoyer des messages dans le passé ?",
+    choices: ["Un micro-ondes", "Une console de jeux", "Un PC portable", "Une télévision cathodique"],
+    answer: "Un micro-ondes"
   },
   {
-    question: "Quel membre de l'équipe 7 maîtrise le Sharingan ?",
-    choices: ["Naruto", "Sakura", "Sasuke", "Shikamaru"],
-    answer: "Sasuke"
+    question: "Dans My Hero Academia, comment appelle-t-on les pouvoirs des héros ?",
+    choices: ["Stands", "Quirks/Alters", "Nen", "Techniques maudites"],
+    answer: "Quirks/Alters"
   },
   {
-    question: "Quel est le vrai nom de l'organisation criminelle qui rassemble Itachi, Kisame, Pain, etc. ?",
-    choices: ["Akatsuki", "Root", "Anbu Noir", "Otokage"],
-    answer: "Akatsuki"
-  },
-  {
-    question: "Quel est le lien entre Naruto et le Quatrième Hokage ?",
-    choices: ["Son oncle", "Son père", "Son grand frère", "Aucun lien"],
-    answer: "Son père"
-  },
-
-  // ONE PIECE
-  {
-    question: "Quel est le nom complet du capitaine de l'équipage du Chapeau de paille ?",
-    choices: ["Monkey D. Luffy", "Portgas D. Ace", "Gol D. Roger", "Shanks Le Roux"],
-    answer: "Monkey D. Luffy"
-  },
-  {
-    question: "Quel personnage prépare les repas sur le Thousand Sunny ?",
-    choices: ["Zoro", "Sanji", "Usopp", "Chopper"],
-    answer: "Sanji"
-  },
-  {
-    question: "Dans One Piece, quel est le nom de l'île où Luffy recrute Chopper ?",
-    choices: ["Skypiea", "Drum", "Alabasta", "Water Seven"],
-    answer: "Drum"
-  },
-  {
-    question: "Quel membre de l'équipage utilise trois sabres en combat ?",
-    choices: ["Zoro", "Brook", "Nami", "Franky"],
-    answer: "Zoro"
-  },
-  {
-    question: "Quel est le nom de l'arme antique liée à la princesse Vivi et à Alabasta ?",
-    choices: ["Poseidon", "Uranus", "Pluton", "Artemis"],
-    answer: "Pluton"
-  },
-  {
-    question: "Comment s'appelle le frère adoptif de Luffy qui possède le Mera Mera no Mi ?",
-    choices: ["Sabo", "Usopp", "Ace", "Law"],
-    answer: "Ace"
-  },
-
-  // ATTACK ON TITAN
-  {
-    question: "Dans Attack on Titan, quel bataillon porte l'emblème des \"Ailes de la Liberté\" ?",
-    choices: ["Brigade spéciale", "Bataillon d'exploration", "Garnison", "Police militaire intérieure"],
-    answer: "Bataillon d'exploration"
-  },
-  {
-    question: "Quel est le vrai nom de famille d'Eren ?",
-    choices: ["Reiss", "Ackerman", "Yeager", "Braun"],
-    answer: "Yeager"
-  },
-  {
-    question: "Quel titan Eren possède-t-il en premier ?",
-    choices: ["Titan Colossal", "Titan Cuirassé", "Titan Assaillant", "Titan Féminin"],
-    answer: "Titan Assaillant"
-  },
-  {
-    question: "Qui est le détenteur du Titan Féminin ?",
-    choices: ["Mikasa", "Annie", "Historia", "Sasha"],
-    answer: "Annie"
-  },
-  {
-    question: "Comment s'appelle la ville d'origine d'Eren, Mikasa et Armin ?",
-    choices: ["Shiganshina", "Trost", "Mitras", "Ragako"],
-    answer: "Shiganshina"
-  },
-  {
-    question: "Quel personnage maîtrise parfaitement l'équipement tridimensionnel et est reconnu comme un génie ?",
-    choices: ["Jean", "Levi", "Connie", "Erwin"],
-    answer: "Levi"
-  },
-  {
-    question: "Quel mur est brisé en premier par le Titan Colossal ?",
-    choices: ["Mur Sina", "Mur Rose", "Mur Maria", "Mur Reiss"],
-    answer: "Mur Maria"
-  },
-
-  // DEMON SLAYER
-  {
-    question: "Dans Demon Slayer, comment s'appelle la sœur de Tanjiro ?",
-    choices: ["Shinobu", "Kanao", "Mitsuri", "Nezuko"],
-    answer: "Nezuko"
-  },
-  {
-    question: "Quel souffle Tanjiro utilise-t-il principalement ?",
-    choices: ["Souffle de la Foudre", "Souffle de l'Eau", "Souffle du Vent", "Souffle de la Flamme"],
-    answer: "Souffle de l'Eau"
-  },
-  {
-    question: "Quel Hashira est connu comme le Pilier de la Flamme ?",
-    choices: ["Rengoku", "Tengen", "Sanemi", "Giyu"],
-    answer: "Rengoku"
-  },
-  {
-    question: "Quel démon est responsable du massacre de la famille de Tanjiro ?",
-    choices: ["Akaza", "Muzan Kibutsuji", "Douma", "Enmu"],
-    answer: "Muzan Kibutsuji"
-  },
-  {
-    question: "Quel personnage combat principalement avec la Respiration de la Foudre ?",
-    choices: ["Inosuke", "Zenitsu", "Tanjiro", "Genya"],
-    answer: "Zenitsu"
-  },
-  {
-    question: "Inosuke porte un masque représentant quelle créature ?",
-    choices: ["Un lion", "Un renard", "Un sanglier", "Un loup"],
-    answer: "Un sanglier"
-  },
-  {
-    question: "Quelle partie du corps Nezuko doit-elle protéger pour ne pas exposer ses crocs de démon ?",
-    choices: ["Ses mains", "Ses yeux", "Sa bouche", "Ses oreilles"],
-    answer: "Sa bouche"
-  },
-
-  // JUJUTSU KAISEN
-  {
-    question: "Dans Jujutsu Kaisen, comment s'appelle l'esprit maudit dont Yuji avale un doigt ?",
-    choices: ["Mahito", "Sukuna", "Jogo", "Geto"],
-    answer: "Sukuna"
-  },
-  {
-    question: "Quel enseignant de l'école d'exorcistes porte un bandeau sur les yeux ?",
-    choices: ["Nanami", "Gojo", "Todo", "Mechamaru"],
-    answer: "Gojo"
-  },
-  {
-    question: "Quel type de technique Nobara Kugisaki utilise-t-elle ?",
-    choices: ["Marteau et clous", "Épée maudite", "Tir à l'arc", "Poings renforcés"],
-    answer: "Marteau et clous"
-  },
-  {
-    question: "Quel personnage a une obsession étrange pour les fessiers musclés ?",
-    choices: ["Itadori", "Gojo", "Todo", "Nanami"],
-    answer: "Todo"
-  },
-  {
-    question: "Quel est le nom de la technique de domaine de Gojo ?",
-    choices: ["Sanctuaire de l'Ombre", "Infinie Clairvoyance", "Vide Infini", "Monde Blanc"],
-    answer: "Vide Infini"
-  },
-  {
-    question: "Quel animal est associé aux shikigami de Megumi Fushiguro au début de la série ?",
-    choices: ["Chiens", "Chats", "Corbeaux", "Serpents"],
-    answer: "Chiens"
-  },
-  {
-    question: "Comment s'appelle l'organisation antagoniste qui regroupe des fléaux et des sorciers renégats ?",
-    choices: ["Le Noyau Maudit", "La Coalition Noire", "Les Fléaux Unis", "Elle n'a pas de nom clair"],
-    answer: "Elle n'a pas de nom clair"
-  },
-
-  // MY HERO ACADEMIA
-  {
-    question: "Dans My Hero Academia, comment s'appelle le héros numéro 1 au début de la série ?",
-    choices: ["Endeavor", "All Might", "Hawks", "Best Jeanist"],
-    answer: "All Might"
-  },
-  {
-    question: "Quel est le vrai nom de Deku ?",
-    choices: ["Katsuki Bakugo", "Shoto Todoroki", "Izuku Midoriya", "Tenya Iida"],
-    answer: "Izuku Midoriya"
-  },
-  {
-    question: "Quel héros professionnel possède le pouvoir de manipuler les flammes et la glace ?",
-    choices: ["Endeavor", "Shoto Todoroki", "Dabi", "All For One"],
-    answer: "Shoto Todoroki"
-  },
-  {
-    question: "Quel est le nom du pouvoir que All Might transmet à Deku ?",
-    choices: ["All For One", "One For All", "Full Cowling", "Overhaul"],
-    answer: "One For All"
-  },
-  {
-    question: "Quel est le principal rival de Deku dans la classe 1-A ?",
-    choices: ["Iida", "Bakugo", "Kirishima", "Tokoyami"],
-    answer: "Bakugo"
-  },
-  {
-    question: "Quel professeur de Yuei a un alter d'effacement de pouvoir ?",
-    choices: ["Present Mic", "Aizawa", "Midnight", "Ectoplasm"],
-    answer: "Aizawa"
-  },
-  {
-    question: "Quel est le nom de l'organisation criminelle menée par Tomura Shigaraki ?",
-    choices: ["Ligue des Vilains", "Société des Ombres", "Nouvel Ordre", "Main du Chaos"],
-    answer: "Ligue des Vilains"
-  },
-
-  // FMA BROTHERHOOD
-  {
-    question: "Dans Fullmetal Alchemist: Brotherhood, comment s'appellent les deux frères protagonistes ?",
-    choices: ["Edward et Alphonse", "Roy et Riza", "Scar et Marcoh", "Ling et Lan Fan"],
-    answer: "Edward et Alphonse"
-  },
-  {
-    question: "Quelle tentative interdite les frères Elric ont-ils réalisée enfant ?",
-    choices: ["Transmutation humaine", "Création de pierre philosophale", "Transmutation de chimère parlante", "Réveil d'un homonculus"],
-    answer: "Transmutation humaine"
-  },
-  {
-    question: "Quel membre de l'armée est surnommé le \"Flame Alchemist\" ?",
-    choices: ["Maes Hughes", "Roy Mustang", "Alex Armstrong", "Kimblee"],
-    answer: "Roy Mustang"
-  },
-  {
-    question: "Quel est le nom de la pierre légendaire que tout le monde cherche ?",
-    choices: ["Pierre de vie", "Pierre d'immortalité", "Pierre Rouge", "Pierre philosophale"],
-    answer: "Pierre philosophale"
-  },
-  {
-    question: "Comment s'appelle la petite alchimiste qui vit dans la région de Xing ?",
-    choices: ["Lan Fan", "Mei Chang", "Izumi", "Lust"],
-    answer: "Mei Chang"
-  },
-  {
-    question: "Quel homonculus porte un X sur le front et manipule des lances ?",
-    choices: ["Gluttony", "Envy", "Wrath", "Scar n'est pas un homonculus"],
-    answer: "Scar n'est pas un homonculus"
-  },
-  {
-    question: "Quel membre de la famille Armstrong est officier dans l'armée d'Amestris et très musclé ?",
-    choices: ["Olivier Armstrong", "Sig Curtis", "Alex Louis Armstrong", "Buccaneer"],
-    answer: "Alex Louis Armstrong"
-  },
-
-  // DEATH NOTE
-  {
-    question: "Dans Death Note, quel est le vrai nom de L ?",
-    choices: ["Light Yagami", "L Lawliet", "Ryuk", "Near"],
-    answer: "L Lawliet"
-  },
-  {
-    question: "Comment le Death Note tue-t-il une personne si aucune cause n'est précisée ?",
-    choices: ["Accident", "Crise cardiaque", "Suicide", "Maladie"],
-    answer: "Crise cardiaque"
-  },
-  {
-    question: "Quel est le nom du shinigami qui accompagne Light ?",
-    choices: ["Rem", "Ryuk", "Gelus", "Sidoh"],
-    answer: "Ryuk"
-  },
-  {
-    question: "Quel pseudonyme Light utilise-t-il pour agir en tant que justicier ?",
-    choices: ["L", "X", "Kira", "Zero"],
-    answer: "Kira"
-  },
-  {
-    question: "Quel personnage propose à Light l'échange des yeux de shinigami ?",
-    choices: ["Ryuk", "Rem", "Misa", "Near"],
-    answer: "Ryuk"
-  },
-  {
-    question: "Quel détective succède à L dans l'enquête sur Kira ?",
-    choices: ["Near et Mello", "Matsuda", "Watari", "Soichiro"],
-    answer: "Near et Mello"
-  },
-  {
-    question: "Dans Death Note, que doit-on connaître d'une personne pour la tuer avec le carnet ?",
-    choices: ["Son adresse", "Son nom complet", "Son visage et son nom", "Sa date de naissance"],
-    answer: "Son visage et son nom"
-  },
-
-  // HUNTER X HUNTER
-  {
-    question: "Dans Hunter x Hunter, quel est l'objectif principal de Gon ?",
-    choices: ["Devenir Hokage", "Trouver le One Piece", "Retrouver son père", "Devenir alchimiste d'État"],
-    answer: "Retrouver son père"
-  },
-  {
-    question: "Quel est le meilleur ami de Gon rencontré lors de l'examen Hunter ?",
-    choices: ["Kurapika", "Killua", "Leorio", "Hisoka"],
-    answer: "Killua"
-  },
-  {
-    question: "À quel clan appartient Kurapika ?",
-    choices: ["Clan Uchiha", "Clan Kurta", "Clan Zoldyck", "Clan Ackerman"],
-    answer: "Clan Kurta"
-  },
-  {
-    question: "Quel est le nom de la famille d'assassins de Killua ?",
-    choices: ["Famille Phantom", "Famille Kurta", "Famille Zoldyck", "Famille York"],
-    answer: "Famille Zoldyck"
-  },
-  {
-    question: "Quel antagoniste a une obsession malsaine pour Gon et aime se battre contre les plus forts ?",
-    choices: ["Chrollo", "Hisoka", "Meruem", "Illumi"],
-    answer: "Hisoka"
-  },
-  {
-    question: "Quel type de Nen Gon apprend-il principalement ?",
-    choices: ["Émission", "Transformation", "Renforcement", "Spécialisation"],
+    question: "Dans Hunter x Hunter, quel est le type de Nen principal de Gon ?",
+    choices: ["Transformation", "Émission", "Manipulation", "Renforcement"],
     answer: "Renforcement"
   },
   {
-    question: "Dans l'arc Greed Island, sur quel support se trouve le jeu ?",
-    choices: ["Cartouche NES", "CD-ROM", "Jeu VR", "Jeu de cartes IRL"],
-    answer: "CD-ROM"
+    question: "Dans JoJo’s Bizarre Adventure, quelle génération introduit les Stands pour la première fois ?",
+    choices: ["Phantom Blood (Part 1)", "Battle Tendency (Part 2)", "Stardust Crusaders (Part 3)", "Diamond is Unbreakable (Part 4)"],
+    answer: "Stardust Crusaders (Part 3)"
+  },
+  {
+    question: "Dans Jujutsu Kaisen, quel est le rôle principal de Satoru Gojo à l’école d’exorcistes ?",
+    choices: ["Directeur de l’école", "Professeur", "Étudiant", "Inspecteur spécial"],
+    answer: "Professeur"
+  },
+  {
+    question: "Dans Chainsaw Man, à quoi est lié le pouvoir de Denji ?",
+    choices: ["Une tronçonneuse", "Un fusil", "Un chien démoniaque", "Un katana maudit"],
+    answer: "Une tronçonneuse"
+  },
+  {
+    question: "Dans Violet Evergarden, quel métier Violet exerce-t-elle pour comprendre les émotions ?",
+    choices: ["Journaliste", "Autrice de romans", "Auto Memory Doll (rédactrice de lettres)", "Professeure"],
+    answer: "Auto Memory Doll (rédactrice de lettres)"
+  },
+  {
+    question: "Dans Bungo Stray Dogs, plusieurs personnages sont inspirés de quoi ?",
+    choices: ["Dieux japonais", "Personnages de jeux vidéo", "Auteurs et œuvres littéraires", "Figures historiques européennes"],
+    answer: "Auteurs et œuvres littéraires"
+  },
+  {
+    question: "Dans Noragami, Yato est au départ un dieu…",
+    choices: ["De la guerre", "De la pauvreté", "Du ménage", "Sans domaine clairement reconnu"],
+    answer: "Sans domaine clairement reconnu"
+  },
+  {
+    question: "Dans Dr. Stone, pourquoi la civilisation doit-elle être reconstruite ?",
+    choices: ["Une guerre nucléaire a tout détruit", "Un virus a éradiqué l’humanité", "Tous les humains ont été pétrifiés", "La Terre a changé d’orbite"],
+    answer: "Tous les humains ont été pétrifiés"
+  },
+  {
+    question: "Dans Fire Force, quel est le phénomène surnaturel au cœur du scénario ?",
+    choices: ["Métamorphose en pierre", "Combustion spontanée humaine", "Pluie acide constante", "Possession par des esprits"],
+    answer: "Combustion spontanée humaine"
+  },
+  {
+    question: "Dans Fate/Zero, pour quel objet mystique les mages se battent-ils ?",
+    choices: ["La Lance de Longinus", "La Triforce", "Le Saint Graal", "La Pierre philosophale"],
+    answer: "Le Saint Graal"
+  },
+  {
+    question: "Dans Overlord, quel est le nom que prend le protagoniste coincé dans le jeu ?",
+    choices: ["Kirito", "Ainz Ooal Gown", "Momonga D.", "Bell Cranel"],
+    answer: "Ainz Ooal Gown"
+  },
+  {
+    question: "Dans No Game No Life, comment sont réglés les conflits dans le monde de Disboard ?",
+    choices: ["Par la guerre totale", "Par vote démocratique", "Par des jeux et paris", "Par duel magique"],
+    answer: "Par des jeux et paris"
+  },
+  {
+    question: "Dans The Rising of the Shield Hero, quel est le principal handicap de Naofumi au combat ?",
+    choices: ["Il ne peut utiliser que des boucliers", "Il ne peut pas parler", "Il ne peut pas utiliser de magie", "Il est maudit de ne pas pouvoir blesser ses ennemis"],
+    answer: "Il ne peut utiliser que des boucliers"
+  },
+  {
+    question: "Dans Re:Zero, quel est le « pouvoir » principal de Subaru ?",
+    choices: ["Voyager dans le futur", "Contrôler les souvenirs", "Revenir à la vie à un point de sauvegarde", "Changer de corps avec quelqu’un"],
+    answer: "Revenir à la vie à un point de sauvegarde"
+  },
+  {
+    question: "Dans Erased, dans quelle période de sa vie Satoru est-il renvoyé pour résoudre le mystère ?",
+    choices: ["Dans sa petite enfance", "Au collège", "Au lycée", "À l’université"],
+    answer: "Dans sa petite enfance"
+  },
+  {
+    question: "Dans Psycho-Pass, que mesure le fameux système Sibyl pour juger un individu ?",
+    choices: ["Son QI", "Son niveau de stress criminel (Crime Coefficient)", "Sa fortune", "Son âge mental"],
+    answer: "Son niveau de stress criminel (Crime Coefficient)"
+  },
+  {
+    question: "Dans Haikyuu!!, sur quel poste Hinata se spécialise-t-il malgré sa taille ?",
+    choices: ["Passeur", "Libero", "Central/pointu", "Réceptionneur-attaquant"],
+    answer: "Central/pointu"
+  },
+  {
+    question: "Dans Spy x Family, quelle particularité possède Anya ?",
+    choices: ["Elle voit le futur", "Elle lit dans les pensées", "Elle contrôle le temps", "Elle est invisibile"],
+    answer: "Elle lit dans les pensées"
+  },
+  {
+    question: "Dans Blue Exorcist, de qui Rin Okumura est-il le fils ?",
+    choices: ["D’un exorciste légendaire", "De Satan", "D’un dieu oublié", "Du pape"],
+    answer: "De Satan"
+  },
+  {
+    question: "Dans Toradora!, quel est le genre principal de la série ?",
+    choices: ["Mecha", "Isekai", "Romance / slice of life", "Horreur psychologique"],
+    answer: "Romance / slice of life"
+  },
+  {
+    question: "Dans Wolf Children, quelle est la particularité des enfants d’Hana ?",
+    choices: ["Ils ne vieillissent pas", "Ils peuvent voler", "Ils peuvent se transformer en loups", "Ils voient les fantômes"],
+    answer: "Ils peuvent se transformer en loups"
+  },
+  {
+    question: "Dans Ajin, quelle est la caractéristique principale des Ajin ?",
+    choices: ["Ils ne ressentent pas la douleur", "Ils sont immortels", "Ils ne dorment jamais", "Ils contrôlent le métal"],
+    answer: "Ils sont immortels"
+  },
+  {
+    question: "Dans Golden Kamuy, que cherche principalement le duo de protagonistes ?",
+    choices: ["Un artefact magique", "Un trésor en or caché", "Un passage vers l’Amérique", "Une ville perdue"],
+    answer: "Un trésor en or caché"
   },
 
-  // HAIKYUU
   {
-    question: "Dans Haikyuu!!, quel poste occupe Kageyama ?",
-    choices: ["Central", "Libero", "Passeur", "Receveur"],
-    answer: "Passeur"
+    question: "Lequel de ces animés est un film du studio Madhouse et non une série ?",
+    choices: ["Redline", "Black Lagoon", "Paranoia Agent", "Devilman Crybaby"],
+    answer: "Redline"
   },
   {
-    question: "Quel surnom Hinata reçoit-il en référence à un ancien joueur de Karasuno ?",
-    choices: ["Petit géant", "As du ciel", "Tigre bondissant", "Corbeau blanc"],
-    answer: "Petit géant"
+    question: "Parmi ces animés, lequel n’est PAS initialement adapté d’un manga mais d’un visual novel ou novel ?",
+    choices: ["Steins;Gate", "Erased", "Tokyo Ghoul", "Chainsaw Man"],
+    answer: "Steins;Gate"
   },
   {
-    question: "Quel club affronte Karasuno lors d'un match emblématique au début de la série ?",
-    choices: ["Aoba Johsai", "Date Tech", "Nekoma", "Fukurodani"],
-    answer: "Aoba Johsai"
+    question: "Dans Code Geass, quel est l’effet principal du Geass de Lelouch ?",
+    choices: ["Remonter le temps", "Lire les pensées", "Contrôler totalement une personne une fois", "Annuler les souvenirs d’une personne"],
+    answer: "Contrôler totalement une personne une fois"
   },
   {
-    question: "Qui est le libero de Karasuno ?",
-    choices: ["Tsukishima", "Nishinoya", "Daichi", "Asahi"],
-    answer: "Nishinoya"
+    question: "Dans Fate/Zero, Saber est la réincarnation d’une figure historique. Laquelle ?",
+    choices: ["Arthur Pendragon (Roi Arthur)", "Lancelot du Lac", "Alexandre le Grand", "Jeanne d’Arc"],
+    answer: "Arthur Pendragon (Roi Arthur)"
   },
   {
-    question: "Quel est le sport pratiqué dans Haikyuu!! ?",
-    choices: ["Basket-ball", "Football", "Baseball", "Volley-ball"],
-    answer: "Volley-ball"
+    question: "Parmi ces œuvres laquelle est classée 18+ ?",
+    choices: ["Berserk (1997)", "Devilman Crybaby", "Hellsing Ultimate", "Texhnolyze"],
+    answer: "Devilman Crybaby"
   },
   {
-    question: "Quel est le principal défaut de Hinata au début de la série ?",
-    choices: ["Trop petit", "Mauvaise vue", "Manque de puissance", "Peur du ballon"],
-    answer: "Trop petit"
+    question: "Dans Neon Genesis Evangelion, comment appelle-t-on les ennemis mystérieux que combattent les EVA ?",
+    choices: ["Hollows", "Titans", "Anges", "Démons"],
+    answer: "Anges"
   },
   {
-    question: "Quel duo est connu pour leurs attaques rapides synchronisées ?",
-    choices: ["Daichi et Suga", "Hinata et Kageyama", "Tsukki et Yamaguchi", "Asahi et Nishinoya"],
-    answer: "Hinata et Kageyama"
+    question: "Lequel de ces animés traite le plus directement du thème de la dépression et de l’introspection existentielle ?",
+    choices: ["Neon Genesis Evangelion", "Haikyuu!!", "Blue Lock", "Food Wars!"],
+    answer: "Neon Genesis Evangelion"
+  },
+  {
+    question: "Laquelle de ces œuvres est un film de la réalisatrice Naoko Yamada (Kyoto Animation) ?",
+    choices: ["A Silent Voice", "Belle", "Wolf Children", "Spirited Away"],
+    answer: "A Silent Voice"
+  },
+  {
+    question: "Parmi ces animés, lequel est un spin globalement centré sur une évaluation du « coefficient criminel » ?",
+    choices: ["Death Note", "Psycho-Pass", "Ergo Proxy", "Paranoia Agent"],
+    answer: "Psycho-Pass"
+  },
+  {
+    question: "Dans JoJo’s Bizarre Adventure, comment s’appelle le pouvoir spirituel qui accompagne les utilisateurs à partir de la Part 3 ?",
+    choices: ["Quirk", "Nen", "Stand", "Geass"],
+    answer: "Stand"
+  },
+  {
+    question: "Dans Moriarty the Patriot, quelle célèbre figure littéraire antagonise William James Moriarty ?",
+    choices: ["Hercule Poirot", "Sherlock Holmes", "Lupin III", "Conan Edogawa"],
+    answer: "Sherlock Holmes"
+  },
+  {
+    question: "Dans Devilman Crybaby, quel est le véritable objectif de Ryo Asuka ?",
+    choices: [
+      "Devenir le roi des démons",
+      "Observer l’humanité pour Dieu",
+      "Déclencher l’apocalypse et révéler la guerre anges/démons",
+      "Éradiquer tous les démons et sauver le monde"
+    ],
+    answer: "Déclencher l’apocalypse et révéler la guerre anges/démons"
+  },
+  {
+    question: "Lequel de ces animés traite le plus directement de la guerre et des discriminations ethniques dans un contexte futuriste ?",
+    choices: ["Vinland Saga", "86 Eighty-Six", "Erased", "Fire Force"],
+    answer: "86 Eighty-Six"
+  },
+  {
+    question: "Parmi ces animés, lequel est un exemple classique d’« urban fantasy » se déroulant dans un quartier réel de Tokyo ?",
+    choices: ["Durarara!!", "Gurren Lagann", "Vinland Saga", "Dr. Stone"],
+    answer: "Durarara!!"
+  },
+  {
+    question: "Dans Haibane Renmei, quelle est une des grandes questions symboliques au cœur de la série ?",
+    choices: [
+      "L’origine du pouvoir magique",
+      "La réincarnation et la rédemption",
+      "La colonisation spatiale",
+      "La création d’IA conscientes"
+    ],
+    answer: "La réincarnation et la rédemption"
+  },
+  {
+    question: "Lequel de ces animés se rapproche le plus du cyberpunk philosophique ?",
+    choices: ["Ergo Proxy", "Haikyuu!!", "Toradora!", "Free!"],
+    answer: "Ergo Proxy"
+  },
+  {
+    question: "Dans Dorohedoro, quelle est la particularité physique majeure de Caiman ?",
+    choices: ["Il a un bras mécanique", "Il a une tête de lézard", "Il a deux cœurs", "Il a des ailes"],
+    answer: "Il a une tête de lézard"
+  },
+  {
+    question: "Lequel de ces animés est produit par le studio MAPPA ?",
+    choices: ["Chainsaw Man", "Free!", "Violet Evergarden", "Cowboy Bebop"],
+    answer: "Chainsaw Man"
+  },
+  {
+    question: "Parmi ces œuvres, laquelle est une série courte (environ 11–13 épisodes) mais reconnue pour son style graphique très atypique et centré sur le ping-pong ?",
+    choices: ["Megalo Box", "Ping Pong the Animation", "Yuri!!! on Ice", "Blue Lock"],
+    answer: "Ping Pong the Animation"
+  },
+  {
+    question: "Dans Black Lagoon, dans quelle région du monde se déroulent principalement les activités de la Lagoon Company ?",
+    choices: ["Europe de l’Est", "Amérique du Nord", "Asie du Sud-Est", "Afrique du Nord"],
+    answer: "Asie du Sud-Est"
+  },
+  {
+    question: "Parmi ces animés, lequel propose une réécriture moderne du mythe du vampire dans un contexte quasi militaire ?",
+    choices: ["Hellsing Ultimate", "Devilman Crybaby", "Bungo Stray Dogs", "Oshi no Ko"],
+    answer: "Hellsing Ultimate"
+  },
+  {
+    question: "Dans Gurren Lagann, quel thème symbolique est au cœur de l’histoire ?",
+    choices: ["La lutte des classes", "Le dépassement de soi et la volonté humaine", "La science contre la magie", "La vengeance familiale"],
+    answer: "Le dépassement de soi et la volonté humaine"
+  },
+  {
+    question: "Lequel de ces animés est le plus associé au réalisateur Satoshi Kon ?",
+    choices: ["Paranoia Agent", "Erased", "Ergo Proxy", "Psycho-Pass"],
+    answer: "Paranoia Agent"
+  },
+  {
+    question: "Parmi ces œuvres, laquelle est un film traitant surtout de la notion de distance temporelle et émotionnelle entre deux personnes ?",
+    choices: ["5 Centimeters per Second", "Grave of the Fireflies", "Wolf Children", "Summer Wars"],
+    answer: "5 Centimeters per Second"
+  },
+  {
+    question: "Dans Terror in Resonance, quel moyen les deux protagonistes utilisent-ils pour défier la police ?",
+    choices: ["Des braquages de banques", "Des énigmes et vidéos en ligne", "Des combats de rue", "Des piratages de jeux vidéo"],
+    answer: "Des énigmes et vidéos en ligne"
+  },
+  {
+    question: "Parmi ces animés, lequel est un thriller tournant autour d’une boucle temporelle et d’enlèvements d’enfants ?",
+    choices: ["Erased", "Death Note", "Steins;Gate", "Re:Zero"],
+    answer: "Erased"
+  },
+  
+  {
+    question: "Lequel de ces animés est un film du studio Chizu et non de Ghibli ou Kyoto Animation ?",
+    choices: ["Belle", "Spirited Away", "A Silent Voice", "My Neighbor Totoro"],
+    answer: "Belle"
+  },
+  {
+    question: "Dans Fullmetal Alchemist: Brotherhood, quel est le péché capital incarné par le chef des Homunculus ?",
+    choices: ["Pride", "Father", "Greed", "Wrath"],
+    answer: "Father"
+  },
+  {
+    question: "Quel anime mélange patinage artistique et introspection émotionnelle ?",
+    choices: ["Free!", "Yuri!!! on Ice", "Ping Pong the Animation", "Horimiya"],
+    answer: "Yuri!!! on Ice"
+  },
+  {
+    question: "Dans Fate/Zero, quel servant est célèbre pour son charisme exubérant lors des banquets ?",
+    choices: ["Gilgamesh", "Lancer", "Rider (Iskander)", "Assassin"],
+    answer: "Rider (Iskander)"
+  },
+  {
+    question: "Dans Mob Psycho 100, quel est l’alias du mentor de Mob ?",
+    choices: ["Tsubomi", "Reigen", "Dimple", "Serizawa"],
+    answer: "Reigen"
+  },
+  {
+    question: "Dans Dragon Ball Z, quel est le premier ennemi majeur de l’arc Saiyan ?",
+    choices: ["Frieza", "Raditz", "Cell", "Vegeta"],
+    answer: "Raditz"
+  },
+  {
+    question: "Quel anime propose une réécriture moderne du mythe de Frankenstein ?",
+    choices: ["Erased", "Ajin", "Devilman Crybaby", "Paranoia Agent"],
+    answer: "Ajin"
+  },
+  {
+    question: "Dans Dorohedoro, dans quel lieu se déroule principalement l’histoire ?",
+    choices: ["Le Monde Souterrain", "La Capitale", "Hole", "La Zone Libre"],
+    answer: "Hole"
+  },
+  {
+    question: "Quel anime associe magie, clans et rivalité fraternelle dans un univers médiéval fantastique ?",
+    choices: ["Black Clover", "Fairy Tail", "Overlord", "No Game No Life"],
+    answer: "Black Clover"
+  },
+  {
+    question: "Dans Cowboy Bebop, comment s'appelle le vaisseau principal ?",
+    choices: ["Swordfish II", "Red Tail", "Bebop", "Outlaw Star"],
+    answer: "Bebop"
+  },
+  {
+    question: "Quel anime présente un monde où les humains sont menacés par une forêt et ses créatures géantes ?",
+    choices: ["Made in Abyss", "Princess Mononoke", "Nausicaä of the Valley of the Wind", "To Your Eternity"],
+    answer: "Nausicaä of the Valley of the Wind"
+  },
+  {
+    question: "Dans Konosuba, quel est le pouvoir principal d’Aqua ?",
+    choices: ["Feu sacré", "Résurrection et purification", "Invocation d’armes divines", "Domination mentale"],
+    answer: "Résurrection et purification"
+  },
+  {
+    question: "Dans Erased, quel métier Satoru exerce-t-il en tant qu’adulte ?",
+    choices: ["Enseignant", "Livreur de pizzas", "Mangaka raté", "Policier"],
+    answer: "Livreur de pizzas"
+  },
+  {
+    question: "Dans Bleach, quel est le rôle d’un Shinigami remplaçant ?",
+    choices: ["Capturer les hollows", "Protéger les humains", "Guider les âmes", "Tout à la fois"],
+    answer: "Tout à la fois"
+  },
+  {
+    question: "Dans Fire Force, quelle brigade Shinra rejoint-il ?",
+    choices: ["Compagnie 7", "Compagnie 1", "Compagnie 8", "Compagnie 5"],
+    answer: "Compagnie 8"
+  },
+  {
+    question: "Dans Blue Exorcist, quel démon légendaire apparaît comme l’ennemi principal ?",
+    choices: ["Baal", "Satan", "Asmodeus", "Belzébuth"],
+    answer: "Satan"
+  },
+  {
+    question: "Dans Gurren Lagann, quel est le nom du robot principal ?",
+    choices: ["Lagann", "Tengen Toppa", "Gurren", "Gurren Lagann"],
+    answer: "Gurren Lagann"
+  },
+  {
+    question: "Quel anime mélange mafia, littérature et pouvoirs surnaturels ?",
+    choices: ["Durarara!!", "Black Lagoon", "Bungo Stray Dogs", "Moriarty the Patriot"],
+    answer: "Bungo Stray Dogs"
+  },
+  {
+    question: "Dans Ranking of Kings, quel est le handicap principal de Bojji ?",
+    choices: ["Aveugle", "Sourd et muet", "Ne peut pas marcher", "Ne peut pas parler"],
+    answer: "Sourd et muet"
+  },
+  {
+    question: "Dans Tokyo Ghoul, comment s’appelle la spécialité d’arme anti-ghoul utilisée par les inspecteurs ?",
+    choices: ["Quirk", "Kagune", "Queen", "Quinque"],
+    answer: "Quinque"
+  },
+  {
+    question: "Dans Fairy Tail, quel est l’élément que maîtrise Natsu ?",
+    choices: ["Glace", "Feu", "Vent", "Lumière"],
+    answer: "Feu"
   },
 
-  // TOKYO GHOUL
-  {
-    question: "Dans Tokyo Ghoul, comment s'appelle le protagoniste principal ?",
-    choices: ["Kaneki Ken", "Arima Kishou", "Amon Koutarou", "Touka Kirishima"],
-    answer: "Kaneki Ken"
-  },
-  {
-    question: "Que devient Kaneki après son opération ?",
-    choices: ["Un inspecteur du CCG", "Un ghoul", "Un shinigami", "Un exorciste"],
-    answer: "Un ghoul"
-  },
-  {
-    question: "Quel café sert de refuge aux ghouls bienveillants ?",
-    choices: ["Café Latte", "Café Dove", "Café Anteiku", "Café Ghoul"],
-    answer: "Café Anteiku"
-  },
-  {
-    question: "Quel organe est transplanté à Kaneki, le transformant en ghoul ?",
-    choices: ["Un rein", "Un oeil", "Un poumon", "Un estomac"],
-    answer: "Un oeil"
-  },
-  {
-    question: "Comment s'appelle l'organisation qui traque les ghouls ?",
-    choices: ["CCG", "Jujutsu High", "NERV", "Amestris"],
-    answer: "CCG"
-  },
-  {
-    question: "Quel est le nom de la ghoul aux cheveux violets qui s'intéresse de près à Kaneki ?",
-    choices: ["Touka", "Rize", "Hinami", "Eto"],
-    answer: "Rize"
-  },
-  {
-    question: "Quel est le nom de code de Kaneki lorsqu'il devient plus violent et prend une nouvelle identité ?",
-    choices: ["Centipede", "Eyepatch", "Black Reaper", "Haise Sasaki"],
-    answer: "Centipede"
-  },
 
-  // SWORD ART ONLINE
   {
-    question: "Dans Sword Art Online, comment s'appelle le protagoniste principal ?",
-    choices: ["Kirito", "Klein", "Agil", "Eugeo"],
-    answer: "Kirito"
+    question: "Dans Neon Genesis Evangelion, quelle organisation pilote les EVA ?",
+    choices: ["WILLE", "Seele", "Gehirn", "NERV"],
+    answer: "NERV"
   },
   {
-    question: "Comment s'appelle le premier jeu VRMMO mortel dans lequel les joueurs sont piégés ?",
-    choices: ["ALO", "GGO", "SAO", "Underworld"],
-    answer: "SAO"
+    question: "Dans Monster quelle métaphore symbolise le monstre intérieur ?",
+    choices: ["Le cercle", "Le dragon", "Le vampire", "Le loup"],
+    answer: "Le dragon"
   },
   {
-    question: "Quel est le véritable nom de Kirito ?",
-    choices: ["Kazuto Kirigaya", "Kirigaya Kira", "Akihiko Kayaba", "Kazuma Satou"],
-    answer: "Kazuto Kirigaya"
+    question: "Dans Berserk 1997, quel événement marque la fin traumatisante de la série ?",
+    choices: ["Le Grand Fléau", "L’Éclipse", "Le Pacte Noir", "La Marque du Démon"],
+    answer: "L’Éclipse"
   },
   {
-    question: "Dans SAO, que se passe-t-il si un joueur meurt dans le jeu ?",
-    choices: ["Il respawn à la ville de départ", "Il perd tout son équipement", "Il meurt aussi dans la réalité", "Il reste coincé en spectateur"],
-    answer: "Il meurt aussi dans la réalité"
+    question: "Dans Death Note, pourquoi L s’assoit-il de façon accroupie ?",
+    choices: [
+      "Pour se concentrer",
+      "Pour rester éveillé",
+      "Pour augmenter son niveau de réflexion",
+      "Pour contrer la pression artérielle"
+    ],
+    answer: "Pour augmenter son niveau de réflexion"
   },
   {
-    question: "Comment s'appelle la guilde dirigée par Asuna dans le jeu SAO ?",
-    choices: ["Knights of Blood", "Laughing Coffin", "Sleeping Knights", "Blue Radiance"],
-    answer: "Knights of Blood"
+    question: "Dans 86 Eighty-Six, comment sont appelés les soldats sacrifiés par la République ?",
+    choices: ["Les Oubliés", "Les No-Names", "Les 86", "Les Sans-Voix"],
+    answer: "Les 86"
   },
   {
-    question: "Dans Gun Gale Online (GGO), quel type d'arme Kirito utilise-t-il principalement ?",
-    choices: ["Fusil de sniper", "Double pistolet", "Épée laser", "Lance-roquettes"],
-    answer: "Épée laser"
+    question: "Dans Fate/Zero, quel servant est réputé pour sa philosophie nihiliste sur la guerre ?",
+    choices: ["Caster", "Assassin", "Berserker", "Kirei Kotomine / Lancer"],
+    answer: "Caster"
   },
   {
-    question: "Quel est le rôle d'Akihiko Kayaba dans SAO ?",
-    choices: ["Simple joueur", "Créateur du jeu", "Hacker externe", "Modérateur bénévole"],
-    answer: "Créateur du jeu"
+    question: "Dans Ergo Proxy, quel terme désigne les androïdes sophistiqués cohabitant avec les humains ?",
+    choices: ["AutoReivs", "EVA", "Dolls", "Synthetic Souls"],
+    answer: "AutoReivs"
+  },
+  {
+    question: "Dans Texhnolyze, quelle ville souterraine constitue le décor du récit ?",
+    choices: ["Rapture", "Luca", "Lux", "Zalem"],
+    answer: "Lux"
+  },
+  {
+    question: "Dans Hellsing Ultimate, quel est le nom de l'ennemi nazi surnaturel que doit combattre Alucard ?",
+    choices: ["Millennium", "Einsatz", "Ouroboros", "Edelweiss"],
+    answer: "Millennium"
+  },
+  {
+    question: "Dans Gantz, que doivent absolument faire les participants pour survivre ?",
+    choices: ["Obéir à la sphère noire", "Gagner une guerre", "Tuer un monstre précis", "Terminer des missions sans mourir"],
+    answer: "Terminer des missions sans mourir"
+  },
+  {
+    question: "Dans Black Lagoon, comment s’appelle la ville gangrenée par la criminalité où vit l’équipage ?",
+    choices: ["Roanapur", "Shinjuku", "Rangpur", "Laketown"],
+    answer: "Roanapur"
+  },
+  {
+    question: "Dans Paranoia Agent, que symbolise la batte dorée de Shonen Bat ?",
+    choices: ["Une déité", "La violence juvénile", "La fuite face aux problèmes", "La folie collective"],
+    answer: "La fuite face aux problèmes"
+  },
+  {
+    question: "Dans Durarara!!, comment s'appelle la motarde sans tête ?",
+    choices: ["Selty", "Celia", "Senna", "Shizu"],
+    answer: "Selty"
+  },
+  {
+    question: "Dans Oshi no Ko, quel métier Ai exerce-t-elle ?",
+    choices: ["Actrice", "Idole", "Influenceuse", "Mannequin"],
+    answer: "Idole"
+  },
+  {
+    question: "Dans Summer Wars, quel est le nom du monde virtuel attaqué par l’IA Love Machine ?",
+    choices: ["Linkverse", "OZ", "AetherNet", "Digital Sea"],
+    answer: "OZ"
+  },
+  {
+    question: "Dans Children of the Sea, quelle entité cosmique influence le destin des protagonistes ?",
+    choices: ["Les étoiles", "L’océan lui-même", "Une comète", "Un monstre marin géant"],
+    answer: "L’océan lui-même"
+  },
+  {
+    question: "Dans Violet Evergarden, quel événement tragique pousse Violet à changer de voie ?",
+    choices: ["La perte de ses bras", "La mort de Gilbert", "Sa capture", "La perte de mémoire"],
+    answer: "La perte de ses bras"
+  },
+  {
+    question: "Dans Dorohedoro, quel rôle jouent les sorciers dans l'univers ?",
+    choices: ["Oppresseurs des humains", "Protecteurs", "Nomades neutres", "Retirés du monde"],
+    answer: "Oppresseurs des humains"
+  },
+  {
+    question: "Dans Made in Abyss, quel est le principal danger de la remontée hors de l’Abysse ?",
+    choices: ["Les monstres", "La malédiction de l’Abysse", "La faim", "L’absence de lumière"],
+    answer: "La malédiction de l’Abysse"
+  },
+  {
+    question: "Dans Moriarty the Patriot, quelle est la philosophie de Moriarty pour « améliorer » le monde ?",
+    choices: ["Éradiquer les pauvres", "Détruire le gouvernement", "Punir les nobles corrompus", "Planter une révolution socialiste"],
+    answer: "Punir les nobles corrompus"
+  },
+  {
+    question: "Dans One Piece, quel membre de l'équipage de Luffy est originaire du Royaume de Drum ?",
+    choices: ["Chopper", "Nami", "Robin", "Franky"],
+    answer: "Chopper"
+  },
+  {
+    question: "Quel est le nom du titan que possède Reiner Braun dans Attack on Titan ?",
+    choices: ["Titan Assaillant", "Titan Colossal", "Titan Cuirassé", "Titan Bestial"],
+    answer: "Titan Cuirassé"
+  },
+  {
+    question: "Dans My Hero Academia, quel personnage utilise un alter basé sur la glace et le feu ?",
+    choices: ["Bakugo", "Todoroki", "Deku", "Endeavor"],
+    answer: "Todoroki"
+  },
+  {
+    question: "Quel est le but principal d’Edward et Alphonse dans Fullmetal Alchemist: Brotherhood ?",
+    choices: ["Vaincre le gouvernement", "Récupérer leurs corps", "Créer une chimère parfaite", "Trouver une nouvelle nation"],
+    answer: "Récupérer leurs corps"
+  },
+  {
+    question: "Quel est le nom de l'école que fréquente Light Yagami dans Death Note ?",
+    choices: ["To-Oh University", "Tokyo Tech", "Kansai Academy", "Meiwa College"],
+    answer: "To-Oh University"
+  },
+  {
+    question: "Dans Demon Slayer, quel démon utilise la Lune comme thème pour ses techniques ?",
+    choices: ["Akaza", "Kokushibo", "Douma", "Gyutaro"],
+    answer: "Kokushibo"
+  },
+  {
+    question: "Dans Naruto, qui est le premier à enseigner le contrôle du chakra à Naruto ?",
+    choices: ["Kakashi", "Iruka", "Jiraya", "Ebisu"],
+    answer: "Ebisu"
+  },
+  {
+    question: "Dans Sword Art Online, quel est l’étage final d’Aincrad ?",
+    choices: ["50", "75", "100", "150"],
+    answer: "100"
+  },
+  {
+    question: "Quel personnage de Hunter x Hunter a la capacité d’utiliser la chaîne Judgement Chain ?",
+    choices: ["Hisoka", "Killua", "Kurapika", "Chrollo"],
+    answer: "Kurapika"
+  },
+  {
+    question: "Dans Jujutsu Kaisen, quel personnage possède la technique des Dix Ombres ?",
+    choices: ["Yuji", "Gojo", "Megumi", "Nobara"],
+    answer: "Megumi"
+  },
+  {
+    question: "Quel anime raconte l’histoire d’une fille capable de voyager dans le temps après un accident en classe ?",
+    choices: ["Erased", "Your Name", "The Girl Who Leapt Through Time", "Steins;Gate"],
+    answer: "The Girl Who Leapt Through Time"
+  },
+  {
+    question: "Dans Bleach, quel est le nom complet de l'épée d’Ichigo ?",
+    choices: ["Senbonzakura", "Zangetsu", "Benihime", "Wabisuke"],
+    answer: "Zangetsu"
+  },
+  {
+    question: "Quel anime met en scène un monde virtuel nommé OZ utilisé par des millions de personnes ?",
+    choices: ["Summer Wars", "SAO", "No Game No Life", "Overlord"],
+    answer: "Summer Wars"
+  },
+  {
+    question: "Dans Fairy Tail, quel esprit de Lucy est le plus puissant parmi les signes du zodiaque ?",
+    choices: ["Leo", "Virgo", "Aquarius", "Taurus"],
+    answer: "Leo"
+  },
+  {
+    question: "Dans Tokyo Ghoul, quelle est la classe d’un inspecteur spécialisé d’élite ?",
+    choices: ["Classe A", "Classe S", "Classe Spéciale", "Classe Oméga"],
+    answer: "Classe Spéciale"
+  },
+  {
+    question: "Quel anime raconte l’histoire d’une jeune femme qui apprend à écrire des lettres pour comprendre ses émotions ?",
+    choices: ["Your Lie in April", "Violet Evergarden", "Clannad", "A Silent Voice"],
+    answer: "Violet Evergarden"
+  },
+  {
+    question: "Dans Blue Lock, quel est l'objectif unique demandé aux joueurs ?",
+    choices: ["Jouer en équipe", "Devenir le meilleur gardien", "Marquer et devenir attaquant n°1", "Apprendre le fair-play"],
+    answer: "Marquer et devenir attaquant n°1"
+  },
+  {
+    question: "Quel personnage de JoJo possède Stand *Star Platinum* ?",
+    choices: ["Jotaro", "Joseph", "Giorno", "Jonathan"],
+    answer: "Jotaro"
+  },
+  {
+    question: "Dans Black Clover, quel est l'atout principal d’Asta malgré l’absence de magie ?",
+    choices: ["Une force surhumaine", "L’anti-magie", "Un grimoire élémentaire", "Un démon guérisseur"],
+    answer: "L’anti-magie"
+  },
+  {
+    question: "Dans Overlord, quel est le nom de la guilde dont Momonga était le maître ?",
+    choices: ["Ainz Ooal Gown", "Blue Roses", "Black Fangs", "Dragon Tusk"],
+    answer: "Ainz Ooal Gown"
+  },
+  {
+    question: "Quel anime met en scène une équipe de combattants luttant contre des démons enflammés ?",
+    choices: ["Demon Slayer", "Fire Force", "Chainsaw Man", "Blue Exorcist"],
+    answer: "Fire Force"
+  },
+  {
+    question: "Dans Mob Psycho 100, quel est le principal objectif de Mob ?",
+    choices: ["Devenir le plus puissant", "Gagner de l’argent", "Mener une vie normale", "Dominer les esprits"],
+    answer: "Mener une vie normale"
+  },
+  {
+    question: "Dans Code Geass, quel pouvoir Lelouch obtient-il en recevant le Geass ?",
+    choices: ["Contrôle total d'une personne", "Téléportation", "Télépathie", "Manipulation du temps"],
+    answer: "Contrôle total d'une personne"
+  },
+  {
+    question: "Quel film raconte l’histoire de deux enfants mi-loups élevés par leur mère ?",
+    choices: ["Children of the Sea", "Wolf Children", "Belle", "Spirited Away"],
+    answer: "Wolf Children"
+  },
+  {
+    question: "Dans Psycho-Pass, comment appelle-t-on la valeur qui mesure la dangerosité mentale ?",
+    choices: ["Soul Index", "Crime Coefficient", "Threat Number", "Mental Pulse"],
+    answer: "Crime Coefficient"
+  },
+  {
+    question: "Quel film de Makoto Shinkai explore la distance émotionnelle et physique entre deux personnes ?",
+    choices: ["Your Name", "Weathering With You", "5 Centimeters per Second", "The Garden of Words"],
+    answer: "5 Centimeters per Second"
+  },
+  {
+    question: "Dans Dr. Stone, quel est le domaine principal de Senku ?",
+    choices: ["Médecine", "Technique militaire", "Ingénierie et science", "Astronomie"],
+    answer: "Ingénierie et science"
+  },
+  {
+    question: "Quel anime se déroule dans une ville fictive nommée Ikebukuro où des gangs s'affrontent ?",
+    choices: ["Durarara!!", "Bungo Stray Dogs", "Black Lagoon", "Paranoia Agent"],
+    answer: "Durarara!!"
+  },
+  {
+    question: "Dans Gurren Lagann, quel est le thème principal récurrent ?",
+    choices: ["La politique", "Le destin tragique", "Le dépassement de soi", "La science contre la magie"],
+    answer: "Le dépassement de soi"
+  },
+  {
+    question: "Quel anime présente un protagoniste ressuscitant après chaque échec pour changer le futur ?",
+    choices: ["Steins;Gate", "Re:Zero", "Erased", "Made in Abyss"],
+    answer: "Re:Zero"
   }
 ]
+
+
 
 const questions = ref<Question[]>([])
 const currentIndex = ref(0)

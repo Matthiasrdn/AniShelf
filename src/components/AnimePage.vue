@@ -6,9 +6,19 @@
       Parcours le catalogue et ajoute tes animés préférés à ta liste.
     </p>
 
+    
+    <div class="search-wrapper">
+      <input
+        v-model="searchTerm"
+        type="text"
+        class="search-input"
+        placeholder="Rechercher un animé (titre, description...)"
+      />
+    </div>
+
     <div class="cards">
       <div
-        v-for="anime in catalog"
+        v-for="anime in filteredCatalog"
         :key="anime.id"
         class="card"
       >
@@ -110,7 +120,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAnimeStore } from '../store/animeStore'
 import type { Anime } from '../data/animeCatalog'
@@ -121,6 +131,21 @@ const { catalog, myList, addToListWithNote } = useAnimeStore()
 const selectedAnime = ref<Anime | null>(null)
 const rating = ref<number>(5)
 const comment = ref<string>('')
+
+
+const searchTerm = ref('')
+
+
+const filteredCatalog = computed(() =>
+  catalog.value.filter((anime: Anime) => {   
+    const q = searchTerm.value.trim().toLowerCase()
+    if (!q) return true
+    return (
+      anime.title.toLowerCase().includes(q) ||
+      anime.description.toLowerCase().includes(q)
+    )
+  })
+)
 
 const quickComments = [
   'À voir absolument',
@@ -159,7 +184,8 @@ function appendQuickComment(text: string) {
   if (!comment.value) {
     comment.value = text
   } else if (!comment.value.includes(text)) {
-    comment.value = comment.value.trim() + (comment.value.endsWith('.') ? ' ' : ' · ') + text
+    comment.value =
+      comment.value.trim() + (comment.value.endsWith('.') ? ' ' : ' · ') + text
   }
 }
 </script>
@@ -181,9 +207,38 @@ h1 {
 }
 
 .subtitle {
-  margin: 0 0 24px;
+  margin: 0 0 16px;
   font-size: 0.95rem;
   color: #9ca3af;
+}
+
+
+.search-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 380px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  background: rgba(15, 23, 42, 0.9);
+  color: #f9fafb;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+
+.search-input:focus {
+  border-color: rgba(244, 114, 182, 0.8);
+  box-shadow: 0 0 0 1px rgba(244, 114, 182, 0.3);
 }
 
 .cards {
@@ -201,7 +256,8 @@ h1 {
   flex-direction: column;
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.7);
   border: 1px solid rgba(244, 114, 182, 0.2);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .card:hover {
@@ -417,6 +473,7 @@ h1 {
   gap: 8px;
   margin-top: 16px;
 }
+
 @media (max-width: 600px) {
   .popup-header {
     flex-direction: column;
