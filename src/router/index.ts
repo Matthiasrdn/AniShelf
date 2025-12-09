@@ -6,13 +6,13 @@ import MyListPage from '../components/MyListPage.vue'
 import QuizPage from '../components/Quiz.vue'
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
-        { path: '/', component: HomePage },
-        { path: '/catalog', component: AnimePage },
-        { path: '/my-list', component: MyListPage },
-        { path: '/animes/:id', component: AnimeDetailPage },
-        { path: '/quiz', component: QuizPage }
+        { path: '/', name: 'home', component: HomePage },
+        { path: '/catalog', name: 'catalog', component: AnimePage },
+        { path: '/my-list', name: 'my-list', component: MyListPage },
+        { path: '/animes/:id', name: 'anime-detail', component: AnimeDetailPage },
+        { path: '/quiz', name: 'quiz', component: QuizPage }
     ]
 })
 
